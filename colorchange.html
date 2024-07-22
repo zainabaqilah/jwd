@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer Box</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #colorBox {
+            width: 300px;
+            height: 300px;
+            background-color: #008080; /* Teal */
+            color: #FFFFFF; /* White */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        #colorInputText, #computedColorText {
+            margin: 10px 0;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox">
+        <div id="colorInputText">#008080</div>
+        <div id="computedColorText">rgb(0, 128, 128)</div>
+    </div>
+    <input type="text" id="bgColorInput" placeholder="Enter background color (name or hex)">
+    <button onclick="toggleTextColor()">Toggle Text Color</button>
+
+    <script>
+        // Convert RGB color to Hex color
+        function rgbToHex(rgb) {
+            var rgbValues = rgb.match(/\d+/g);
+            var hex = "#" + ((1 << 24) + (parseInt(rgbValues[0]) << 16) + (parseInt(rgbValues[1]) << 8) + parseInt(rgbValues[2])).toString(16).slice(1).toUpperCase();
+            return hex;
+        }
+
+        // Change background color based on input value
+        document.getElementById('bgColorInput').addEventListener('input', function() {
+            var colorBox = document.getElementById('colorBox');
+            var colorInput = this.value;
+            colorBox.style.backgroundColor = colorInput;
+            document.getElementById('colorInputText').textContent = colorInput;
+
+            var computedStyle = getComputedStyle(colorBox).backgroundColor;
+            document.getElementById('computedColorText').textContent = computedStyle;
+
+            var hexColor = rgbToHex(computedStyle);
+            document.getElementById('colorInputText').textContent = hexColor;
+        });
+
+        // Toggle text color between white and black
+        function toggleTextColor() {
+            var colorBox = document.getElementById('colorBox');
+            if (colorBox.style.color === 'rgb(255, 255, 255)') { // White
+                colorBox.style.color = 'rgb(0, 0, 0)'; // Black
+            } else {
+                colorBox.style.color = 'rgb(255, 255, 255)'; // White
+            }
+        }
+    </script>
+</body>
+</html>
