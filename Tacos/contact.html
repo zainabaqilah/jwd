@@ -50,43 +50,35 @@
     <!-- gambar garis lurus -->
 
     <h2 class="mt-6 text-xl font-bold">Our Contact Form</h2>
-    <fieldset class="border border-gray-300 px-5">
-      <div class="mt-6 flex min-h-screen items-start justify-start bg-gray-100">
-        <br />
-        <legend class="text-xs font-semibold">Send Us A Message</legend>
-      </div>
-
-      <div>
-        <label class="text-xs font-semibold"> Name: </label>
-        <input
-          type="text"
-          name="name"
-          placeholder="your name"
-          class="w-full border border-gray-300 p-2 focus:ring-blue-500"
-        />
-      </div>
-
-      <div class="mt-2">
-        <label class="text-xs font-semibold"> Email:</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="your email"
-          class="w-full border border-gray-300 p-2 focus:ring-blue-500"
-        />
-      </div>
-
-      <div class="mt-2">
-        <label> Your Message:</label> <br />
-        <textarea
-          name="message"
-          cols="30"
-          rows="8"
-          placeholder="Type your message here"
-          class="w-full rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        ></textarea>
-      </div>
-    </fieldset>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset class="border px-5">
+          <legend>Send Us A Message</legend>
+          <div class="mt-2 px-5">
+            <label>Name : </label>
+            <input
+              type="text"
+              placeholder="enter your name"
+              class="border px-5 text-xs"
+            />
+          </div>
+          <div class="mt-4 px-5">
+            <label>Email : </label>
+            <input
+              type="email"
+              placeholder="enter your email"
+              class="border px-5 text-xs"
+            />
+          </div>
+          <div class="mb-5 mt-4 px-5">
+            <label>Your Message : </label><br />
+            <textarea
+              rows="6"
+              class="w-full border px-5 text-xs"
+              placeholder="type your message here"
+            ></textarea>
+          </div>
+        </fieldset>
+      </form>
 
     <button class="mt-2 border bg-slate-300 hover:border-indigo-300">
       Send
