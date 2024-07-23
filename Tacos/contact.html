@@ -4,58 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <title>JUDUL HALAMAN PERTAMA</title>
+    <title>JUDUL HALAMAN KONTAK</title>
 </head>
-<body>
-    <h1>Contact Us</h1>
-    <header class="header2">
+<body class="px-10">
+    <h1 class="mt-6 text-center font-bold text-2xl">Contact Us</h1>
+    <header class="header1 mt-6">
         <nav class="navbar1">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">About LTS</a></li>
-            <li><a href="">Our Menu</a></li>
-            <li><a href="">Store Hours</a></li>
+            <ul class="list-disc list-inside">
+            <li><a href="index.html" class="text-blue-500 underline hover:text-blue-700">Home</a></li>
+            <li><a href="" class="text-blue-500 underline hover:text-blue-700">About LTS</a></li>
+            <li><a href="menu.html" class="text-blue-500 underline hover:text-blue-700">Our Menu</a></li>
+            <li><a href="" class="text-blue-500 underline hover:text-blue-700">Store Hours</a></li>
             </ul>
         </nav>
     </header>
+
     <ul>
-    <img src="img/tacos_close_up_400x260.png" alt="foto-kontak">
-    <p>Little Taco Shop Tacos</p>
-    </ul>
-    <hr>   <!-- gambar garis lurus -->
+    <img src="img/tacos_close_up_400x260.png" alt="foto-kontak" class="px-5 mt-6">
+    <p class="px-5 mt-2">Little Taco Shop Tacos</p>
+    
+    <hr class="mt-6">   <!-- gambar garis lurus -->
 
-    <h2> Our Contact Form</h2>
-    <fieldset>
-        <legend> Send Us A Message</legend>
-        <p>
-            <label> Name: </label>
-            <input type="text" name="name" placeholder="your name">
-        </p>
+    <h2 class="font-bold text-xl mt-6"> Our Contact Form</h2>
+    
+    <div class="flex items-start justify-start min-h-screen bg-gray-100 mt-6"></div>
+      <fieldset class="border border-gray-300 px-5" > <br>
+        <legend class="text-xs font-semibold"> Send Us A Message</legend>
+    </div>
+    
+    <div>
+        <label class="text-xs font-semibold"> Name: </label>
+        <input type="text" name="name" placeholder="your name" class="w-full p-2 border border-gray-300 focus:ring-blue-500">
+    </div>
 
-        <p>
-            <label> Email:</label>
-            <input type="email" name="email" placeholder="your email">
-        </p>
+     <div class="mt-2">
+        <label class="text-xs font-semibold"> Email:</label>
+        <input type="email" name="email" placeholder="your email" class="w-full p-2 border border-gray-300  focus:ring-blue-500">
+    </div>
 
-        <p>
-            <label> Your Message:</label> <br>
-            <textarea name="message" cols="27" rows="10" placeholder="Type your message here"></textarea>
-        </p>
+    <div class="mt-2"></div>
+        <label> Your Message:</label> <br>
+        <textarea name="message" cols="30" rows="8" placeholder="Type your message here" class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+    </div>
     </fieldset>
 
-    <button type="submit">Send</button> 
-    <button type="reset"> Reset</button>
+    <button class="mt-2 border bg-slate-300 hover:border-indigo-300">
+        Send
+    </button> 
 
-    <h2> Our Location</h2>
+    <button class="border bg-slate-300 hover:border-indigo-300">
+        Reset
+    </button>
+
+    <h2 class="mt-6 font-bold text-xl"> Our Location</h2> <br>
     <address> 555 Taco Temptation Lane, Suite T <br>
     Kansas City; MO 55555-55555</address> <br>
 
-    <address> Phone: <a href="tel:555-5555-5555">555-5555-5555</a></address> <br>
+    <address> Phone: <a href="tel:555-5555-5555" class="text-blue-500 underline">555-5555-5555</a></address> <br>
 
-    <a href="">Back to Top</a>
+    <a href="contact.html" class="text-blue-500 underline">Back to Top</a> 
 
-    <hr>
+    <hr class="mt-2">
 
-    <p>Copyright © The Little Taco Shop</p>
+    <p class="mt-2">Copyright © The Little Taco Shop</p>
 </body>
 </html>
