@@ -1,108 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
     <title>JUDUL HALAMAN UTAMA</title>
-</head>
-<body class="px-10">
-    <h1 class="mt-6 text-center font-bold text-2xl">Welcome to The Little Taco Shop</h1>
-    <header class="header1 mt-6">
+  </head>
+  <body class="item-center flex h-screen justify-center px-10">
+    <div class="w-96 border px-5">
+      <h1 class="mt-6 text-center text-2xl font-bold">
+        Welcome to The Little Taco Shop
+      </h1>
+      <header class="header1 mt-6">
         <nav class="navbar1">
-            <ul class="list-disc list-inside">
-            <li><a href="" class="text-blue-500 underline hover:text-blue-700">About LTS</a></li>
-            <li><a href="menu.html" class="text-blue-500 underline hover:text-blue-700">Our Menu</a></li>
-            <li><a href="" class="text-blue-500 underline hover:text-blue-700">Store Hours</a></li>
-            <li><a href="contact.html" class="text-blue-500 underline hover:text-blue-700">Contact Us</a></li>
-            </ul>
+          <ul class="list-inside list-disc">
+            <li>
+              <a href="" class="text-blue-500 underline hover:text-blue-700"
+                >About LTS</a
+              >
+            </li>
+            <li>
+              <a
+                href="menu.html"
+                class="text-blue-500 underline hover:text-blue-700"
+                >Our Menu</a
+              >
+            </li>
+            <li>
+              <a href="" class="text-blue-500 underline hover:text-blue-700"
+                >Store Hours</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-blue-500 underline hover:text-blue-700"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
         </nav>
-    </header>
-    
-    <img src="img/tacos_and_drink_400x267.png" alt="foto-pertama" class="px-5 mt-6">
-    <p class="px-5 mt-2">Tacos and a Drink</p>
-    
-    <hr class="mt-6">   <!-- gambar garis lurus -->
+      </header>
 
-    <h2 class="font-bold text-xl mt-7"> About LTS</h2>
-    <p class="mt-2">LTS was founded in 2022. Our shop was built from a <strong>love of tacos</strong>. We hope our shop
-    adds a unique and interesting place to our little town.</p>
+      <img
+        src="img/tacos_and_drink_400x267.png"
+        alt="foto-pertama"
+        class="mt-6 px-5"
+      />
+      <p class="mt-2 px-5">Tacos and a Drink</p>
 
-    <h3 class="font-bold text-lg mt-8"> Taco Trivia</h3>
-    <details>
-        <summary class="mt-2"> When did tacos first appear in the United States?</summary>
-    </details>
-    
-    <hr class="mt-2">
+      <hr class="mt-6" />
+      <!-- gambar garis lurus -->
 
-    <h2 class="mt-6 font-bold text-xl" >Our Menu</h2>
-    
-    <div class="flex items-start justify-start min-h-screen mt-6">
+      <h2 class="mt-7 text-xl font-bold">About LTS</h2>
+      <p class="mt-2">
+        LTS was founded in 2022. Our shop was built from a
+        <strong>love of tacos 🌮🌮🌮</strong>. We hope our shop adds a unique
+        and interesting place to our little town.
+      </p>
+
+      <h3 class="mt-8 text-lg font-bold">Taco Trivia</h3>
+      <details>
+        <summary class="mt-2">
+          When did tacos first appear in the United States?
+        </summary>
+      </details>
+
+      <hr class="mt-2" />
+
+      <h2 class="mt-6 text-xl font-bold">Our Menu</h2>
+
+      <div class="mt-6 flex min-h-screen items-start justify-start">
         <div class="col-span-12">
-            <div class="overflow-auto lg:overflow-visible">
-                <table class="min-w-full bg-white border border-gray-600">
-                    <thead>
-                        <tr>
-                            <td colspan="3" class="px-4 py-2 border border-gray-200 text-center">Our Tacos</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th class="px-5 py-3 border border-gray-600">Tacos</th>
-                        <th class="px-5 py-3 border border-gray-600">Qty</th>
-                        <th class="px-5 py-3 border border-gray-600">Price</th>
-                        <tr>
-                            <th rowspan="3">Crunchy</th>
-                            <td class="px-4 py-2 border border-gray-600">1</td>
-                            <td class="px-4 py-2 border border-gray-600">$1.50</td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="px-4 py-2 border border-gray-600">2</td>
-                            <td class="px-4 py-2 border border-gray-600">$2.50</td>
-                        </tr>
+          <div class="overflow-auto lg:overflow-visible">
+            <table class="min-w-full border border-gray-600 bg-white">
+              <thead>
+                <tr>
+                  <td
+                    colspan="3"
+                    class="border border-gray-200 px-4 py-2 text-center"
+                  >
+                    Our Tacos
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="border border-gray-600 px-5 py-3">Tacos</th>
+                  <th class="border border-gray-600 px-5 py-3">Qty</th>
+                  <th class="border border-gray-600 px-5 py-3">Price</th>
+                </tr>
 
-                        <tr>
-                            <td class="px-4 py-2 border border-gray-600">3</td>
-                            <td class="px-4 py-2 border border-gray-600">$3.25</td>
-                        </tr>
+                <tr>
+                  <th rowspan="3">Crunchy</th>
+                  <td class="border border-gray-600 px-4 py-2">1</td>
+                  <td class="border border-gray-600 px-4 py-2">$1.50</td>
+                </tr>
 
-                        <tr>
-                            <th rowspan="4" class="px-4 py-2 border border-gray-600"> Soft</th>
-                        </tr>
+                <tr>
+                  <td class="border border-gray-600 px-4 py-2">2</td>
+                  <td class="border border-gray-600 px-4 py-2">$2.50</td>
+                </tr>
 
-                        <tr>
-                            <td class="px-4 py-2 border border-gray-600">1</td>
-                            <td class="px-4 py-2 border border-gray-600">$2.00</td>
-                        </tr>
+                <tr>
+                  <td class="border border-gray-600 px-4 py-2">3</td>
+                  <td class="border border-gray-600 px-4 py-2">$3.25</td>
+                </tr>
 
-                        <tr>
-                            <td class="px-4 py-2 border border-gray-600">2</td>
-                            <td class="px-4 py-2 border border-gray-600">$3.50</td>
-                        </tr>
+                <tr>
+                  <th rowspan="4" class="border border-gray-600 px-4 py-2">
+                    Soft
+                  </th>
+                </tr>
 
-                        <tr>
-                            <td class="px-4 py-2 border border-gray-600">3</td>
-                            <td class="px-4 py-2 border border-gray-600">$4.50</td>
-                        </tr>
+                <tr>
+                  <td class="border border-gray-600 px-4 py-2">1</td>
+                  <td class="border border-gray-600 px-4 py-2">$2.00</td>
+                </tr>
 
-                        <tr>
-                            <td colspan="3" class="text-left"> Chips & Salsa $2</td>
-                        </tr>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
+                <tr>
+                  <td class="border border-gray-600 px-4 py-2">2</td>
+                  <td class="border border-gray-600 px-4 py-2">$3.50</td>
+                </tr>
+
+                <tr>
+                  <td class="border border-gray-600 px-4 py-2">3</td>
+                  <td class="border border-gray-600 px-4 py-2">$4.50</td>
+                </tr>
+
+                <tr>
+                  <td colspan="3" class="text-left">Chips & Salsa $2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
+
+      <p class="mt-6">
+        <a
+          href="contact.html"
+          class="text-blue-500 underline hover:text-blue-700"
+          >Back to Top</a
+        >
+      </p>
+
+      <hr class="mt-2" />
+
+      <p class="mt-2">Copyright © The Little Taco Shop</p>
     </div>
-
-        <p class="mt-6">
-          <a href="contact.html" class="text-blue-500 underline hover:text-blue-700">Back to Top</a>
-        </p>
-
-    <hr class="mt-2">
-
-    <p class="mt-2">Copyright © The Little Taco Shop</p>
-</body>
+  </body>
 </html>
