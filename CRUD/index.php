@@ -78,6 +78,7 @@
                         <th class="px-5 py-3 bg-yellow-200 border-b border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">Nama</th>
                         <th class="px-5 py-3 bg-yellow-200 border-b border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">Jurusan</th>
                         <th class="px-5 py-3 bg-yellow-200 border-b border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">Fakultas</th>
+                        <th class="px-5 py-3 bg-yellow-200 border-b border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">Foto Diri</th>
                         <th class="px-5 py-3 bg-yellow-200 border-b border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">Action</th>
                     </tr>
                 </thead>
@@ -110,6 +111,7 @@
                             <td class='px-5 py-3 border-b border-gray-200 bg-white text-sm'>{$row['nama']}</td>
                             <td class='px-5 py-3 border-b border-gray-200 bg-white text-sm'>{$row['jurusan']}</td>
                             <td class='px-5 py-3 border-b border-gray-200 bg-white text-sm'>{$row['fakultas']}</td>
+                            <td class='px-5 py-3 border-b border-gray-200 bg-white text-sm'> <img src='" .$row['fileToUpload'] . "' width='200' height='200'</td>
                             <td class='px-5 py-3 border-b border-gray-200 bg-white text-sm'>
                                 <a href='update.php?npm={$row['npm']}' class='text-indigo-600 hover:text-indigo-900 mr-2'>
                                     <i class='fa fa-pencil'></i>
